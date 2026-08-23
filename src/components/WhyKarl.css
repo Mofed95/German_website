@@ -1,0 +1,265 @@
+/* =========================================
+  WHY KARL INSEL TOUR
+========================================= */
+
+.why-karl {
+  position: relative;
+
+  padding: 120px 0 130px;
+
+  background: #fffdf8;
+
+  overflow: hidden;
+}
+
+.why-karl-container {
+  width: min(1300px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.why-karl-header {
+  max-width: 720px;
+  margin: 0 auto 70px;
+
+  text-align: center;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  color: #b28a45;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.section-eyebrow::before,
+.section-eyebrow::after {
+  content: "";
+
+  width: 28px;
+  height: 1px;
+
+  background: #b28a45;
+}
+
+.why-karl-header h2 {
+  margin: 18px 0 22px;
+
+  color: #173f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  font-weight: 500;
+
+  line-height: 1.05;
+}
+
+.why-karl-header h2 span {
+  display: block;
+
+  color: #b28a45;
+
+  font-style: italic;
+}
+
+.why-karl-header p {
+  max-width: 650px;
+  margin: 0 auto;
+
+  color: #66736e;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.advantages-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid rgba(23, 63, 53, 0.12);
+  border-left: 1px solid rgba(23, 63, 53, 0.12);
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.advantage-card {
+  position: relative;
+
+  min-height: 300px;
+
+  padding: 42px 35px;
+
+  background: #fffdf8;
+
+  border-right: 1px solid rgba(23, 63, 53, 0.12);
+  border-bottom: 1px solid rgba(23, 63, 53, 0.12);
+
+  transition:
+    background 0.35s ease,
+    transform 0.35s ease;
+}
+
+.advantage-card:hover {
+  background: #f5efe3;
+
+  transform: translateY(-5px);
+}
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.advantage-number {
+  position: absolute;
+
+  top: 25px;
+  right: 28px;
+
+  color: rgba(178, 138, 69, 0.35);
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.advantage-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  background: #173f35;
+
+  color: #e1bd7a;
+
+  border-radius: 50%;
+
+  font-size: 22px;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.advantage-card:hover .advantage-icon {
+  background: #b28a45;
+
+  color: #ffffff;
+
+  transform: rotate(5deg);
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.advantage-card h3 {
+  margin: 0 0 13px;
+
+  color: #173f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 22px;
+
+  font-weight: 500;
+
+  line-height: 1.3;
+}
+
+.advantage-card p {
+  margin: 0;
+
+  color: #69756f;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .why-karl {
+    padding: 90px 0;
+  }
+
+  .advantages-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .why-karl {
+    padding: 75px 0 85px;
+  }
+
+  .why-karl-header {
+    margin-bottom: 50px;
+  }
+
+  .why-karl-header h2 {
+    font-size: 42px;
+  }
+
+  .why-karl-header p {
+    font-size: 15px;
+  }
+
+  .advantages-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advantage-card {
+    min-height: auto;
+
+    padding: 35px 28px;
+  }
+
+  .advantage-icon {
+    margin-bottom: 22px;
+  }
+}

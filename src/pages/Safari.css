@@ -1,0 +1,1260 @@
+/* =========================================================
+   KARL INSEL TOUR
+   SAFARI PAGE
+   Premium Zanzibar / Tanzania Tourism Design
+========================================================= */
+
+.safari-page {
+  width: 100%;
+  overflow: hidden;
+
+  background: #fffdf8;
+  color: #173f35;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.safari-container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION EYEBROW
+========================================================= */
+
+.safari-section-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 16px;
+
+  color: #b28a45;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+  line-height: 1.4;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.safari-hero {
+  position: relative;
+
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: #ffffff;
+}
+
+.safari-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transform: scale(1.01);
+}
+
+.safari-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 29, 24, 0.91) 0%,
+      rgba(7, 29, 24, 0.68) 45%,
+      rgba(7, 29, 24, 0.20) 100%
+    );
+}
+
+.safari-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+.safari-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  color: #e1bd7a;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+.safari-hero h1 {
+  max-width: 850px;
+
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(58px, 8vw, 105px);
+
+  font-weight: 500;
+
+  line-height: 0.94;
+
+  letter-spacing: -2px;
+}
+
+.safari-hero h1 span {
+  display: block;
+
+  color: #e1bd7a;
+
+  font-style: italic;
+}
+
+.safari-hero p {
+  max-width: 570px;
+
+  margin: 32px 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 16px;
+
+  line-height: 1.85;
+}
+
+.safari-hero-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 25px;
+
+  background: #b28a45;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+.safari-hero-button:hover {
+  background: #c49a56;
+
+  transform: translateY(-3px);
+
+  gap: 15px;
+}
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.safari-intro {
+  padding: 130px 0;
+}
+
+.safari-intro .safari-container {
+  display: grid;
+
+  grid-template-columns: 0.9fr 1.1fr;
+
+  gap: 100px;
+
+  align-items: end;
+}
+
+.safari-intro-heading h2 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(45px, 5vw, 68px);
+
+  font-weight: 500;
+
+  line-height: 1.02;
+
+  letter-spacing: -1px;
+}
+
+.safari-intro-heading h2 span {
+  display: block;
+
+  color: #b28a45;
+
+  font-style: italic;
+}
+
+.safari-intro-text {
+  max-width: 580px;
+}
+
+.safari-intro-text p {
+  margin: 0 0 18px;
+
+  color: #68756f;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+.safari-intro-text strong {
+  color: #173f35;
+
+  font-weight: 700;
+}
+
+/* =========================================================
+   SAFARI EXPERIENCE / SERVICES
+========================================================= */
+
+.safari-experiences {
+  padding: 120px 0;
+
+  background: #f5efe3;
+}
+
+.safari-section-header {
+  max-width: 760px;
+
+  margin-bottom: 55px;
+}
+
+.safari-section-header h2 {
+  margin: 0 0 20px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(45px, 5vw, 68px);
+
+  font-weight: 500;
+
+  line-height: 1.02;
+
+  letter-spacing: -1px;
+}
+
+.safari-section-header h2 span {
+  display: block;
+
+  color: #b28a45;
+
+  font-style: italic;
+}
+
+.safari-section-header p {
+  max-width: 580px;
+
+  margin: 0;
+
+  color: #68756f;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.safari-experiences-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(23, 63, 53, 0.13);
+  border-left: 1px solid rgba(23, 63, 53, 0.13);
+}
+
+.safari-experience-card {
+  min-height: 290px;
+
+  padding: 35px 28px;
+
+  border-right: 1px solid rgba(23, 63, 53, 0.13);
+  border-bottom: 1px solid rgba(23, 63, 53, 0.13);
+
+  background: transparent;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safari-experience-card:hover {
+  background: #fffdf8;
+
+  transform: translateY(-5px);
+}
+
+.safari-experience-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 27px;
+
+  background: #173f35;
+
+  color: #e1bd7a;
+
+  border-radius: 50%;
+
+  font-size: 20px;
+}
+
+.safari-experience-card h3 {
+  margin: 0 0 14px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 23px;
+
+  font-weight: 500;
+
+  line-height: 1.25;
+}
+
+.safari-experience-card p {
+  margin: 0;
+
+  color: #68756f;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SAFARI DESTINATIONS
+========================================================= */
+
+.safari-destinations {
+  padding: 130px 0;
+}
+
+.safari-destinations .safari-section-header {
+  display: grid;
+
+  grid-template-columns: 1fr 0.75fr;
+
+  gap: 80px;
+
+  align-items: end;
+
+  max-width: none;
+}
+
+.safari-destinations-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+}
+
+.safari-destination-card {
+  position: relative;
+
+  height: 520px;
+
+  overflow: hidden;
+
+  background: #173f35;
+}
+
+.safari-destination-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s ease;
+}
+
+.safari-destination-card:hover img {
+  transform: scale(1.08);
+}
+
+.safari-destination-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 28px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(5, 24, 19, 0.94) 0%,
+      rgba(5, 24, 19, 0.63) 34%,
+      rgba(5, 24, 19, 0.06) 75%,
+      rgba(5, 24, 19, 0) 100%
+    );
+
+  color: #ffffff;
+}
+
+.safari-destination-overlay > div:first-child {
+  max-width: 90%;
+}
+
+.safari-destination-overlay span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #e1bd7a;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.safari-destination-overlay h3 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 27px;
+
+  font-weight: 500;
+
+  line-height: 1.15;
+}
+
+.safari-destination-overlay p {
+  max-width: 420px;
+
+  margin: 10px 0 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 12px;
+
+  line-height: 1.65;
+}
+
+.safari-destination-arrow {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safari-destination-card:hover
+.safari-destination-arrow {
+  background: #b28a45;
+
+  border-color: #b28a45;
+
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   FEATURED FESTLAND SAFARI
+========================================================= */
+
+.safari-featured {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 680px;
+
+  background: #173f35;
+
+  color: #ffffff;
+}
+
+.safari-featured-image {
+  min-height: 680px;
+
+  overflow: hidden;
+}
+
+.safari-featured-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.safari-featured:hover
+.safari-featured-image img {
+  transform: scale(1.03);
+}
+
+.safari-featured-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 90px 11%;
+}
+
+.safari-featured-content
+.safari-section-eyebrow {
+  color: #e1bd7a;
+}
+
+.safari-featured-content h2 {
+  margin: 0 0 27px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(45px, 5vw, 67px);
+
+  font-weight: 500;
+
+  line-height: 1.02;
+}
+
+.safari-featured-content h2 span {
+  display: block;
+
+  color: #e1bd7a;
+
+  font-style: italic;
+}
+
+.safari-featured-content p {
+  max-width: 520px;
+
+  margin: 0 0 18px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+.safari-featured-button {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 15px;
+
+  padding: 15px 23px;
+
+  background: #b28a45;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    gap 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safari-featured-button:hover {
+  background: #c49a56;
+
+  gap: 15px;
+
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   SAFARI FEATURES / ADVANTAGES
+========================================================= */
+
+.safari-features {
+  padding: 125px 0;
+}
+
+.safari-features-layout {
+  display: grid;
+
+  grid-template-columns: 1.1fr 0.9fr;
+
+  gap: 100px;
+
+  align-items: start;
+}
+
+.safari-features-list {
+  border-top: 1px solid rgba(23, 63, 53, 0.13);
+}
+
+.safari-feature-item {
+  min-height: 75px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+
+  border-bottom: 1px solid rgba(23, 63, 53, 0.13);
+}
+
+.safari-feature-item > span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: #173f35;
+
+  color: #e1bd7a;
+
+  border-radius: 50%;
+
+  font-size: 13px;
+}
+
+.safari-feature-item p {
+  margin: 0;
+
+  color: #405850;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+}
+
+.safari-features-text {
+  padding-top: 5px;
+}
+
+.safari-features-text p {
+  margin: 0 0 20px;
+
+  color: #68756f;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+.safari-features-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 10px;
+
+  color: #173f35;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.safari-features-link:hover {
+  color: #b28a45;
+
+  gap: 15px;
+}
+
+/* =========================================================
+   ZANZIBAR + SAFARI
+========================================================= */
+
+.safari-combination {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 680px;
+
+  background: #173f35;
+
+  color: #ffffff;
+}
+
+.safari-combination-image {
+  min-height: 680px;
+
+  overflow: hidden;
+}
+
+.safari-combination-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.safari-combination:hover
+.safari-combination-image img {
+  transform: scale(1.03);
+}
+
+.safari-combination-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 90px 11%;
+}
+
+.safari-combination-content
+.safari-section-eyebrow {
+  color: #e1bd7a;
+}
+
+.safari-combination-content h2 {
+  margin: 0 0 27px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(45px, 5vw, 67px);
+
+  font-weight: 500;
+
+  line-height: 1.02;
+}
+
+.safari-combination-content h2 span {
+  display: block;
+
+  color: #e1bd7a;
+
+  font-style: italic;
+}
+
+.safari-combination-content p {
+  max-width: 520px;
+
+  margin: 0 0 28px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+.safari-combination-button {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 23px;
+
+  background: #b28a45;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    gap 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safari-combination-button:hover {
+  background: #c49a56;
+
+  gap: 15px;
+
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   FINAL CTA
+========================================================= */
+
+.safari-cta {
+  padding: 135px 0;
+
+  background: #f5efe3;
+
+  text-align: center;
+}
+
+.safari-cta-content {
+  width: min(780px, 90%);
+
+  margin: 0 auto;
+}
+
+.safari-cta-content h2 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(48px, 6vw, 76px);
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: -1px;
+}
+
+.safari-cta-content h2 span {
+  display: block;
+
+  color: #b28a45;
+
+  font-style: italic;
+}
+
+.safari-cta-content p {
+  max-width: 610px;
+
+  margin: 25px auto 30px;
+
+  color: #68756f;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+.safari-cta-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 25px;
+
+  background: #173f35;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  transition:
+    background 0.3s ease,
+    gap 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safari-cta-button:hover {
+  background: #b28a45;
+
+  gap: 15px;
+
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   LARGE TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .safari-experiences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .safari-destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .safari-features-layout {
+    gap: 60px;
+  }
+
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+  .safari-hero {
+    min-height: 650px;
+  }
+
+  .safari-intro .safari-container {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .safari-destinations
+  .safari-section-header {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+  }
+
+  .safari-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .safari-featured-image {
+    min-height: 500px;
+  }
+
+  .safari-featured-content {
+    min-height: 560px;
+
+    padding: 80px 8%;
+  }
+
+  .safari-features-layout {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .safari-combination {
+    grid-template-columns: 1fr;
+  }
+
+  .safari-combination-image {
+    min-height: 500px;
+  }
+
+  .safari-combination-content {
+    min-height: 550px;
+
+    padding: 80px 8%;
+  }
+
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .safari-container {
+    width: 88%;
+  }
+
+  /* HERO */
+
+  .safari-hero {
+    min-height: 620px;
+  }
+
+  .safari-hero-overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(7, 29, 24, 0.90),
+        rgba(7, 29, 24, 0.58)
+      );
+  }
+
+  .safari-hero-content {
+    width: 88%;
+  }
+
+  .safari-eyebrow {
+    margin-bottom: 17px;
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+  }
+
+  .safari-hero h1 {
+    font-size: 56px;
+
+    letter-spacing: -1px;
+  }
+
+  .safari-hero p {
+    margin: 25px 0;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+  }
+
+  /* INTRO */
+
+  .safari-intro {
+    padding: 85px 0;
+  }
+
+  .safari-intro-heading h2,
+  .safari-section-header h2 {
+    font-size: 45px;
+
+    letter-spacing: -0.5px;
+  }
+
+  .safari-intro-text p {
+    font-size: 14px;
+  }
+
+  /* SERVICES */
+
+  .safari-experiences {
+    padding: 85px 0;
+  }
+
+  .safari-experiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .safari-experience-card {
+    min-height: auto;
+
+    padding: 30px 25px;
+  }
+
+  /* DESTINATIONS */
+
+  .safari-destinations {
+    padding: 90px 0;
+  }
+
+  .safari-destinations-grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+  }
+
+  .safari-destination-card {
+    height: 460px;
+  }
+
+  .safari-destination-overlay {
+    padding: 24px;
+  }
+
+  .safari-destination-overlay h3 {
+    font-size: 27px;
+  }
+
+  .safari-destination-overlay p {
+    font-size: 11px;
+  }
+
+  /* FEATURED */
+
+  .safari-featured-image {
+    min-height: 430px;
+  }
+
+  .safari-featured-content {
+    min-height: auto;
+
+    padding: 75px 7%;
+  }
+
+  .safari-featured-content h2 {
+    font-size: 45px;
+  }
+
+  /* FEATURES */
+
+  .safari-features {
+    padding: 90px 0;
+  }
+
+  .safari-features-layout {
+    gap: 45px;
+  }
+
+  .safari-feature-item {
+    min-height: 70px;
+
+    gap: 14px;
+  }
+
+  .safari-feature-item p {
+    font-size: 12px;
+  }
+
+  /* COMBINATION */
+
+  .safari-combination-image {
+    min-height: 430px;
+  }
+
+  .safari-combination-content {
+    min-height: auto;
+
+    padding: 75px 7%;
+  }
+
+  .safari-combination-content h2 {
+    font-size: 45px;
+  }
+
+  /* CTA */
+
+  .safari-cta {
+    padding: 90px 0;
+  }
+
+  .safari-cta-content {
+    width: 88%;
+  }
+
+  .safari-cta-content h2 {
+    font-size: 48px;
+  }
+
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+  .safari-hero {
+    min-height: 590px;
+  }
+
+  .safari-hero h1 {
+    font-size: 48px;
+  }
+
+  .safari-hero-button,
+  .safari-featured-button,
+  .safari-combination-button,
+  .safari-cta-button {
+    width: 100%;
+
+    justify-content: center;
+
+    padding: 14px 18px;
+  }
+
+  .safari-intro-heading h2,
+  .safari-section-header h2,
+  .safari-featured-content h2,
+  .safari-combination-content h2 {
+    font-size: 40px;
+  }
+
+  .safari-destination-card {
+    height: 430px;
+  }
+
+  .safari-destination-overlay {
+    padding: 20px;
+  }
+
+  .safari-destination-overlay h3 {
+    font-size: 24px;
+  }
+
+  .safari-destination-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .safari-cta-content h2 {
+    font-size: 42px;
+  }
+
+}

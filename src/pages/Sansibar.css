@@ -1,0 +1,742 @@
+/* =========================================
+   KARL INSEL TOUR
+   SANSIBAR PAGE
+========================================= */
+
+.sansibar-page {
+  background: #fffdf8;
+  color: #173f35;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.sansibar-container {
+  width: min(1250px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.sansibar-hero {
+  position: relative;
+
+  min-height: 720px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+
+  color: #ffffff;
+}
+
+.sansibar-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+.sansibar-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(8, 31, 25, 0.82) 0%,
+      rgba(8, 31, 25, 0.55) 50%,
+      rgba(8, 31, 25, 0.18) 100%
+    );
+}
+
+.sansibar-hero-content {
+  position: relative;
+
+  width: min(1250px, 90%);
+  margin: 0 auto;
+
+  z-index: 2;
+}
+
+.sansibar-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #e1bd7a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.sansibar-hero h1 {
+  max-width: 750px;
+
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(58px, 8vw, 105px);
+
+  font-weight: 500;
+
+  line-height: 0.96;
+
+  letter-spacing: -2px;
+}
+
+.sansibar-hero h1 span {
+  display: block;
+
+  color: #e1bd7a;
+
+  font-style: italic;
+}
+
+.sansibar-hero p {
+  max-width: 550px;
+
+  margin: 30px 0;
+
+  color: rgba(255, 255, 255, 0.84);
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.sansibar-hero-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 24px;
+
+  background: #b28a45;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+.sansibar-hero-button:hover {
+  background: #c49a56;
+
+  transform: translateY(-3px);
+
+  gap: 15px;
+}
+
+/* =========================================
+   SECTION EYEBROW
+========================================= */
+
+.sansibar-section-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 17px;
+
+  color: #b28a45;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+/* =========================================
+   INTRO
+========================================= */
+
+.sansibar-intro {
+  padding: 120px 0;
+}
+
+.sansibar-intro .sansibar-container {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+
+  align-items: end;
+}
+
+.sansibar-intro-header h2,
+.sansibar-section-header h2 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(45px, 5vw, 65px);
+
+  font-weight: 500;
+
+  line-height: 1.04;
+
+  letter-spacing: -1px;
+}
+
+.sansibar-intro-header h2 span,
+.sansibar-section-header h2 span {
+  display: block;
+
+  color: #b28a45;
+
+  font-style: italic;
+}
+
+.sansibar-intro-text {
+  max-width: 560px;
+}
+
+.sansibar-intro-text p {
+  margin: 0 0 18px;
+
+  color: #65736d;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.sansibar-highlights {
+  padding: 110px 0;
+
+  background: #f5efe3;
+}
+
+.sansibar-section-header {
+  margin-bottom: 55px;
+}
+
+.sansibar-highlights-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(23, 63, 53, 0.12);
+  border-left: 1px solid rgba(23, 63, 53, 0.12);
+}
+
+.sansibar-highlight-card {
+  min-height: 290px;
+
+  padding: 35px 28px;
+
+  border-right: 1px solid rgba(23, 63, 53, 0.12);
+  border-bottom: 1px solid rgba(23, 63, 53, 0.12);
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.sansibar-highlight-card:hover {
+  background: #fffdf8;
+
+  transform: translateY(-5px);
+}
+
+.sansibar-highlight-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  background: #173f35;
+
+  color: #e1bd7a;
+
+  border-radius: 50%;
+
+  font-size: 20px;
+}
+
+.sansibar-highlight-card h3 {
+  margin: 0 0 13px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 23px;
+
+  font-weight: 500;
+}
+
+.sansibar-highlight-card p {
+  margin: 0;
+
+  color: #68756f;
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+/* =========================================
+   PLACES
+========================================= */
+
+.sansibar-places {
+  padding: 130px 0;
+}
+
+.places-header {
+  display: flex;
+
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 50px;
+}
+
+.places-header > p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #69756f;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.sansibar-places-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 14px;
+}
+
+.sansibar-place-card {
+  position: relative;
+
+  height: 470px;
+
+  overflow: hidden;
+
+  background: #173f35;
+}
+
+.sansibar-place-card img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+.sansibar-place-card:hover img {
+  transform: scale(1.07);
+}
+
+.sansibar-place-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  padding: 25px;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7, 25, 21, 0.9),
+      rgba(7, 25, 21, 0.05) 65%
+    );
+
+  color: #ffffff;
+}
+
+.sansibar-place-overlay span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #e1bd7a;
+
+  font-size: 9px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.sansibar-place-overlay h3 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 28px;
+
+  font-weight: 500;
+}
+
+.sansibar-place-arrow {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  border-radius: 50%;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.sansibar-place-card:hover .sansibar-place-arrow {
+  background: #b28a45;
+
+  border-color: #b28a45;
+}
+
+/* =========================================
+   EXPERIENCE
+========================================= */
+
+.sansibar-experience {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 650px;
+
+  background: #173f35;
+
+  color: #ffffff;
+}
+
+.sansibar-experience-image {
+  min-height: 650px;
+}
+
+.sansibar-experience-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.sansibar-experience-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 80px 10%;
+
+  max-width: 700px;
+}
+
+.sansibar-experience-content h2 {
+  margin: 0 0 25px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(45px, 5vw, 65px);
+
+  font-weight: 500;
+
+  line-height: 1.02;
+}
+
+.sansibar-experience-content h2 span {
+  display: block;
+
+  color: #e1bd7a;
+
+  font-style: italic;
+}
+
+.sansibar-experience-content p {
+  max-width: 500px;
+
+  margin: 0 0 30px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+.sansibar-experience-button {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 14px 22px;
+
+  background: #b28a45;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    gap 0.3s ease;
+}
+
+.sansibar-experience-button:hover {
+  background: #c49a56;
+
+  gap: 15px;
+}
+
+/* =========================================
+   CTA
+========================================= */
+
+.sansibar-cta {
+  padding: 130px 0;
+
+  background: #f5efe3;
+
+  text-align: center;
+}
+
+.sansibar-cta-content {
+  width: min(700px, 90%);
+  margin: 0 auto;
+}
+
+.sansibar-cta h2 {
+  margin: 0;
+
+  color: #173f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(50px, 6vw, 75px);
+
+  font-weight: 500;
+
+  line-height: 1;
+}
+
+.sansibar-cta h2 span {
+  display: block;
+
+  color: #b28a45;
+
+  font-style: italic;
+}
+
+.sansibar-cta p {
+  margin: 25px auto 30px;
+
+  color: #69756f;
+
+  font-size: 15px;
+
+  line-height: 1.8;
+}
+
+.sansibar-cta-button {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 15px 24px;
+
+  background: #173f35;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+.sansibar-cta-button:hover {
+  background: #b28a45;
+
+  transform: translateY(-3px);
+
+  gap: 15px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .sansibar-hero {
+    min-height: 650px;
+  }
+
+  .sansibar-intro .sansibar-container {
+    gap: 55px;
+  }
+
+  .sansibar-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sansibar-places-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sansibar-place-card {
+    height: 430px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .sansibar-hero {
+    min-height: 650px;
+  }
+
+  .sansibar-hero-content {
+    width: 90%;
+  }
+
+  .sansibar-hero h1 {
+    font-size: 57px;
+  }
+
+  .sansibar-hero p {
+    font-size: 15px;
+  }
+
+  .sansibar-intro {
+    padding: 80px 0;
+  }
+
+  .sansibar-intro .sansibar-container {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .sansibar-highlights {
+    padding: 80px 0;
+  }
+
+  .sansibar-section-header {
+    margin-bottom: 40px;
+  }
+
+  .sansibar-section-header h2,
+  .sansibar-intro-header h2 {
+    font-size: 45px;
+  }
+
+  .sansibar-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sansibar-highlight-card {
+    min-height: auto;
+  }
+
+  .sansibar-places {
+    padding: 85px 0;
+  }
+
+  .places-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 20px;
+  }
+
+  .sansibar-places-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sansibar-place-card {
+    height: 420px;
+  }
+
+  .sansibar-experience {
+    grid-template-columns: 1fr;
+  }
+
+  .sansibar-experience-image {
+    min-height: 430px;
+  }
+
+  .sansibar-experience-content {
+    padding: 75px 7%;
+  }
+
+  .sansibar-cta {
+    padding: 85px 0;
+  }
+}

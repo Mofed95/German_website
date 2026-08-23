@@ -1,0 +1,334 @@
+/* =========================================
+  KARL INSEL TOUR
+   DREAM TRIP SECTION
+========================================= */
+
+.dream-trip {
+  padding: 135px 0;
+
+  background: #f5efe3;
+
+  overflow: hidden;
+}
+
+.dream-trip-container {
+  width: min(1300px, 90%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.dream-trip-image {
+  position: relative;
+
+  min-height: 650px;
+
+  overflow: hidden;
+}
+
+.dream-trip-image::before {
+  content: "";
+
+  position: absolute;
+
+  top: -18px;
+  left: -18px;
+
+  width: 110px;
+  height: 110px;
+
+  border-top: 1px solid #b28a45;
+  border-left: 1px solid #b28a45;
+
+  z-index: 2;
+}
+
+.dream-trip-image img {
+  width: 100%;
+  height: 650px;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+.dream-trip-image:hover img {
+  transform: scale(1.04);
+}
+
+/* =========================================
+   IMAGE CAPTION
+========================================= */
+
+.dream-trip-image-caption {
+  position: absolute;
+
+  right: 25px;
+  bottom: 25px;
+
+  min-width: 180px;
+
+  padding: 18px 22px;
+
+  background: rgba(23, 63, 53, 0.94);
+
+  color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.dream-trip-image-caption span {
+  color: #e1bd7a;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.dream-trip-image-caption strong {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.dream-trip-content {
+  max-width: 560px;
+}
+
+.dream-trip-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #b28a45;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.dream-trip-content h2 {
+  margin: 0 0 25px;
+
+  color: #173f35;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(43px, 5vw, 65px);
+
+  font-weight: 500;
+
+  line-height: 1.04;
+
+  letter-spacing: -1px;
+}
+
+.dream-trip-content h2 span {
+  display: block;
+
+  color: #b28a45;
+
+  font-style: italic;
+}
+
+/* =========================================
+   TEXT
+========================================= */
+
+.dream-trip-intro {
+  margin: 0 0 30px;
+
+  color: #465650;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.dream-trip-text {
+  margin: 28px 0 30px;
+
+  color: #66736e;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.dream-trip-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 14px;
+
+  padding: 24px 0;
+
+  border-top: 1px solid rgba(23, 63, 53, 0.15);
+  border-bottom: 1px solid rgba(23, 63, 53, 0.15);
+}
+
+.dream-trip-item {
+  display: flex;
+  align-items: center;
+
+  gap: 13px;
+
+  color: #30453e;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.dream-trip-check {
+  width: 27px;
+  height: 27px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #173f35;
+
+  color: #e1bd7a;
+
+  font-size: 14px;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.dream-trip-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  padding: 15px 23px;
+
+  background: #173f35;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  border: 1px solid #173f35;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+.dream-trip-button svg {
+  font-size: 18px;
+}
+
+.dream-trip-button:hover {
+  background: #b28a45;
+  border-color: #b28a45;
+
+  transform: translateY(-3px);
+
+  gap: 16px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .dream-trip {
+    padding: 100px 0;
+  }
+
+  .dream-trip-container {
+    gap: 55px;
+  }
+
+  .dream-trip-image,
+  .dream-trip-image img {
+    min-height: 560px;
+    height: 560px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+  .dream-trip {
+    padding: 80px 0 90px;
+  }
+
+  .dream-trip-container {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .dream-trip-image,
+  .dream-trip-image img {
+    min-height: 480px;
+    height: 480px;
+  }
+
+  .dream-trip-image::before {
+    top: -10px;
+    left: -10px;
+
+    width: 75px;
+    height: 75px;
+  }
+
+  .dream-trip-content h2 {
+    font-size: 43px;
+  }
+
+  .dream-trip-intro {
+    font-size: 15px;
+  }
+
+  .dream-trip-button {
+    width: 100%;
+  }
+}

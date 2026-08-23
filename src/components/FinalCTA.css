@@ -1,0 +1,196 @@
+/* =========================================
+   KARL INSEL TOUR
+   FINAL CTA
+========================================= */
+
+.final-cta {
+  position: relative;
+
+  min-height: 580px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  color: #ffffff;
+}
+
+.final-cta-background {
+  position: absolute;
+  inset: 0;
+
+  background-image: url("/images/cta-zanzibar.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  transform: scale(1.02);
+}
+
+.final-cta-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 35, 29, 0.88),
+      rgba(10, 35, 29, 0.62),
+      rgba(10, 35, 29, 0.55)
+    );
+}
+
+.final-cta-content {
+  position: relative;
+
+  width: min(750px, 90%);
+
+  text-align: center;
+
+  z-index: 2;
+}
+
+.final-cta-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #e1bd7a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+.final-cta h2 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(52px, 7vw, 85px);
+
+  font-weight: 500;
+
+  line-height: 0.98;
+}
+
+.final-cta h2 span {
+  display: block;
+
+  color: #e1bd7a;
+
+  font-style: italic;
+}
+
+.final-cta p {
+  max-width: 570px;
+
+  margin: 30px auto 35px;
+
+  color: rgba(255, 255, 255, 0.83);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+.final-cta-actions {
+  display: flex;
+  justify-content: center;
+
+  gap: 13px;
+}
+
+.final-cta-primary,
+.final-cta-secondary {
+  min-height: 54px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 0 25px;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.final-cta-primary {
+  background: #b28a45;
+
+  color: #ffffff;
+}
+
+.final-cta-secondary {
+  background: rgba(255, 255, 255, 0.09);
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.55);
+
+  backdrop-filter: blur(5px);
+}
+
+.final-cta-primary:hover,
+.final-cta-secondary:hover {
+  transform: translateY(-3px);
+}
+
+.final-cta-primary:hover {
+  background: #c39a55;
+}
+
+.final-cta-secondary:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.final-cta-primary svg {
+  transition: transform 0.3s ease;
+}
+
+.final-cta-primary:hover svg {
+  transform: translateX(5px);
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .final-cta {
+    min-height: 620px;
+  }
+
+  .final-cta-content {
+    width: 90%;
+  }
+
+  .final-cta h2 {
+    font-size: 53px;
+  }
+
+  .final-cta p {
+    font-size: 14px;
+  }
+
+  .final-cta-actions {
+    flex-direction: column;
+  }
+
+  .final-cta-primary,
+  .final-cta-secondary {
+    width: 100%;
+  }
+}

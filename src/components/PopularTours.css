@@ -1,0 +1,361 @@
+/* =========================================
+  KARL INSEL TOUR
+   POPULAR TOURS
+========================================= */
+
+.popular-tours {
+  padding: 125px 0 135px;
+
+  background: #173f35;
+
+  color: #ffffff;
+}
+
+.popular-tours-container {
+  width: min(1350px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.popular-tours-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  margin-bottom: 60px;
+}
+
+.tours-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #e1bd7a;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+}
+
+.popular-tours-header h2 {
+  margin: 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: clamp(42px, 5vw, 65px);
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -1px;
+}
+
+.popular-tours-header h2 span {
+  display: block;
+
+  color: #e1bd7a;
+
+  font-style: italic;
+}
+
+.tours-header-text {
+  max-width: 400px;
+}
+
+.tours-header-text p {
+  margin: 0 0 22px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 15px;
+
+  line-height: 1.75;
+}
+
+.all-tours-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  border-bottom: 1px solid rgba(225, 189, 122, 0.6);
+
+  padding-bottom: 7px;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.all-tours-link svg {
+  color: #e1bd7a;
+
+  font-size: 17px;
+}
+
+.all-tours-link:hover {
+  color: #e1bd7a;
+
+  gap: 13px;
+}
+
+/* =========================================
+   TOUR GRID
+========================================= */
+
+.popular-tours-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+/* =========================================
+   TOUR CARD
+========================================= */
+
+.tour-card {
+  position: relative;
+
+  height: 460px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: flex-end;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  background: #102e27;
+}
+
+.tour-card-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.7s cubic-bezier(0.2, 0.65, 0.3, 1);
+}
+
+.tour-card:hover .tour-card-image {
+  transform: scale(1.08);
+}
+
+.tour-card-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7, 24, 20, 0.95) 0%,
+      rgba(7, 24, 20, 0.55) 42%,
+      rgba(7, 24, 20, 0.05) 100%
+    );
+
+  transition: opacity 0.4s ease;
+}
+
+.tour-card:hover .tour-card-overlay {
+  opacity: 0.9;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.tour-card-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: 100%;
+
+  padding: 30px;
+}
+
+.tour-card-subtitle {
+  display: block;
+
+  margin-bottom: 9px;
+
+  color: #e1bd7a;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.tour-card h3 {
+  margin: 0 0 12px;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 34px;
+
+  font-weight: 500;
+
+  line-height: 1.1;
+}
+
+.tour-card p {
+  max-width: 380px;
+
+  margin: 0 0 22px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+.tour-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #ffffff;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition:
+    color 0.3s ease,
+    gap 0.3s ease;
+}
+
+.tour-card-link svg {
+  color: #e1bd7a;
+
+  font-size: 17px;
+}
+
+.tour-card:hover .tour-card-link {
+  color: #e1bd7a;
+
+  gap: 13px;
+}
+
+/* =========================================
+   DESKTOP FEATURED CARD
+========================================= */
+
+@media (min-width: 1101px) {
+  .tour-card-1 {
+    height: 560px;
+  }
+
+  .tour-card-4,
+  .tour-card-5,
+  .tour-card-6 {
+    height: 400px;
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+  .popular-tours {
+    padding: 95px 0 105px;
+  }
+
+  .popular-tours-header {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .tours-header-text {
+    max-width: 550px;
+  }
+
+  .popular-tours-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tour-card {
+    height: 430px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .popular-tours {
+    padding: 80px 0 90px;
+  }
+
+  .popular-tours-container {
+    width: 90%;
+  }
+
+  .popular-tours-header {
+    margin-bottom: 40px;
+  }
+
+  .popular-tours-header h2 {
+    font-size: 43px;
+  }
+
+  .tours-header-text p {
+    font-size: 14px;
+  }
+
+  .popular-tours-grid {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+  .tour-card,
+  .tour-card-1,
+  .tour-card-4,
+  .tour-card-5,
+  .tour-card-6 {
+    height: 450px;
+  }
+
+  .tour-card-content {
+    padding: 25px;
+  }
+
+  .tour-card h3 {
+    font-size: 31px;
+  }
+}

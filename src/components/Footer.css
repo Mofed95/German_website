@@ -1,0 +1,289 @@
+/* =========================================
+   KARL INSEL TOUR
+   FOOTER
+========================================= */
+
+.footer {
+  padding: 80px 0 25px;
+
+  background: #102f28;
+
+  color: #ffffff;
+}
+
+.footer-container {
+  width: min(1250px, 90%);
+  margin: 0 auto;
+}
+
+/* =========================================
+   MAIN
+========================================= */
+
+.footer-main {
+  display: grid;
+
+  grid-template-columns:
+    2fr
+    1fr
+    1fr
+    1.2fr;
+
+  gap: 60px;
+
+  padding-bottom: 65px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  max-width: 360px;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+
+  width: fit-content;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  line-height: 1;
+}
+
+.footer-logo span {
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 30px;
+
+  letter-spacing: 4px;
+}
+
+.footer-logo strong {
+  margin-top: 5px;
+
+  color: #e1bd7a;
+
+  font-size: 9px;
+
+  letter-spacing: 5px;
+
+  text-align: center;
+}
+
+.footer-brand > p {
+  margin: 25px 0;
+
+  color: rgba(255, 255, 255, 0.62);
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.footer-socials {
+  display: flex;
+
+  gap: 9px;
+}
+
+.footer-socials a,
+.footer-social-placeholder {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  border-radius: 50%;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-socials a:hover {
+  background: #b28a45;
+
+  border-color: #b28a45;
+
+  transform: translateY(-3px);
+}
+
+.footer-social-placeholder {
+  cursor: default;
+  opacity: 0.7;
+}
+
+/* =========================================
+   COLUMNS
+========================================= */
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 12px;
+}
+
+.footer-column h3 {
+  margin: 0 0 12px;
+
+  color: #e1bd7a;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.footer-column a,
+.footer-column span {
+  color: rgba(255, 255, 255, 0.68);
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  transition:
+    color 0.25s ease,
+    padding-left 0.25s ease;
+}
+
+.footer-column a:hover {
+  color: #ffffff;
+
+  padding-left: 4px;
+}
+
+.footer-contact a {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 5px;
+}
+
+.footer-contact svg {
+  color: #e1bd7a;
+
+  font-size: 15px;
+}
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  padding-top: 25px;
+
+  color: rgba(255, 255, 255, 0.43);
+
+  font-size: 10px;
+}
+
+.footer-developer {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.58);
+  transition: color 0.25s ease;
+}
+
+.footer-developer:hover {
+  color: #e1bd7a;
+}
+
+.footer-legal {
+  display: flex;
+
+  gap: 20px;
+}
+
+.footer-legal a {
+  color: rgba(255, 255, 255, 0.5);
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.footer-legal a:hover {
+  color: #e1bd7a;
+}
+
+.footer a:focus-visible {
+  outline: 2px solid #e1bd7a;
+  outline-offset: 4px;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+  .footer-main {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px;
+  }
+
+  .footer-brand {
+    max-width: 100%;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+  .footer {
+    padding-top: 65px;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+
+    gap: 38px;
+
+    padding-bottom: 45px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+}
