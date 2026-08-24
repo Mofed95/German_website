@@ -9,30 +9,24 @@ import FinalCTA from "../components/FinalCTA.jsx";
 
 function Home() {
   return (
-    <main>
-      {/* Hero Section */}
+    <main className="home-page">
+
       <Hero />
 
-      {/* Why Karl Insel Tour */}
       <WhyKarl />
 
-      {/* Popular Tours */}
       <PopularTours />
 
-      {/* Individual Travel Planning */}
       <DreamTrip />
 
-      {/* About Karl */}
       <KarlAbout />
 
-      {/* Zanzibar Gallery */}
       <Gallery />
 
-      {/* Customer Testimonials */}
       <Testimonials />
 
-      {/* Final Call To Action */}
       <FinalCTA />
+
     </main>
   );
 }

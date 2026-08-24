@@ -13,6 +13,10 @@ import {
 import "./UeberUns.css";
 
 function UeberUns() {
+  // GitHub Pages / Vite-safe image path
+  const image = (path) =>
+    `${import.meta.env.BASE_URL}images/${path}`;
+
   const services = [
     "Private Rundreisen",
     "Tagestouren",
@@ -45,32 +49,38 @@ function UeberUns() {
     {
       icon: <FiCompass />,
       title: "Langjährige Erfahrung",
-      text: "Langjährige Erfahrung im Tourismus und umfassende Kenntnisse über Sansibar.",
+      text:
+        "Langjährige Erfahrung im Tourismus und umfassende Kenntnisse über Sansibar.",
     },
     {
       icon: <FiUsers />,
       title: "Deutsch & Englisch",
-      text: "Deutsch- und englischsprachige Reiseleiter für eine verständliche und entspannte Reise.",
+      text:
+        "Deutsch- und englischsprachige Reiseleiter für eine verständliche und entspannte Reise.",
     },
     {
       icon: <FiShield />,
       title: "Sicher & zuverlässig",
-      text: "Sichere und zuverlässige Transfers sowie komfortable und klimatisierte Fahrzeuge.",
+      text:
+        "Sichere und zuverlässige Transfers sowie komfortable und klimatisierte Fahrzeuge.",
     },
     {
       icon: <FiHeart />,
       title: "Persönlicher Service",
-      text: "Freundliche und persönliche Betreuung – von der Ankunft bis zur Abreise.",
+      text:
+        "Freundliche und persönliche Betreuung – von der Ankunft bis zur Abreise.",
     },
     {
       icon: <FiMapPin />,
       title: "Lokale Ortskenntnis",
-      text: "Als lokaler Reiseveranstalter kennen wir Sansibar und seine besonderen Orte.",
+      text:
+        "Als lokaler Reiseveranstalter kennen wir Sansibar und seine besonderen Orte.",
     },
     {
       icon: <FiClock />,
       title: "Jederzeit erreichbar",
-      text: "Wir sind für Ihre Fragen und Reiseplanung jederzeit erreichbar.",
+      text:
+        "Wir sind für Ihre Fragen und Reiseplanung jederzeit erreichbar.",
     },
   ];
 
@@ -84,7 +94,7 @@ function UeberUns() {
       <section className="ueber-uns-hero">
 
         <img
-          src="/images/forodhani-garden.png"
+          src={image("forodhani-garden.png")}
           alt="Sansibar Küste"
           className="ueber-uns-hero-image"
         />
@@ -112,6 +122,7 @@ function UeberUns() {
 
       </section>
 
+
       {/* =========================================
           INTRODUCTION
       ========================================= */}
@@ -123,13 +134,13 @@ function UeberUns() {
           <div className="ueber-uns-intro-image">
 
             <img
-              src="/images/stone-town-experience.jpeg"
+              src={image("stone-town-experience.jpeg")}
               alt="Karl – deutschsprachiger Reiseleiter auf Sansibar"
             />
 
             <div className="ueber-uns-image-caption">
               <strong>Karl</strong>
-              <span>Gründer & lizenzierter Reiseleiter</span>
+              <span>Gründer &amp; lizenzierter Reiseleiter</span>
             </div>
 
           </div>
@@ -168,7 +179,7 @@ function UeberUns() {
             <div className="ueber-uns-intro-signature">
               <span>Beste Grüße aus Sansibar</span>
               <strong>Karl</strong>
-              <small>Gründer & lizenzierter Reiseleiter</small>
+              <small>Gründer &amp; lizenzierter Reiseleiter</small>
             </div>
 
           </div>
@@ -176,6 +187,7 @@ function UeberUns() {
         </div>
 
       </section>
+
 
       {/* =========================================
           OWNER MESSAGE
@@ -186,8 +198,9 @@ function UeberUns() {
         <div className="ueber-uns-owner-image">
 
           <img
-            src="/images/sele-jozani.png"
+            src={image("sele-jozani.png")}
             alt="Deutschsprachige Reisebegleitung auf Sansibar"
+            loading="lazy"
           />
 
         </div>
@@ -240,6 +253,7 @@ function UeberUns() {
         </div>
 
       </section>
+
 
       {/* =========================================
           SERVICES
@@ -295,6 +309,7 @@ function UeberUns() {
 
       </section>
 
+
       {/* =========================================
           EXPERIENCES
       ========================================= */}
@@ -338,7 +353,7 @@ function UeberUns() {
           <div className="ueber-uns-experiences-link">
 
             <Link to="/reisen">
-              Alle Reisen & Touren entdecken
+              Alle Reisen &amp; Touren entdecken
               <FiArrowRight />
             </Link>
 
@@ -347,6 +362,7 @@ function UeberUns() {
         </div>
 
       </section>
+
 
       {/* =========================================
           WHY CHOOSE US
@@ -398,6 +414,7 @@ function UeberUns() {
 
       </section>
 
+
       {/* =========================================
           OUR PROMISE
       ========================================= */}
@@ -445,6 +462,7 @@ function UeberUns() {
         </div>
 
       </section>
+
 
       {/* =========================================
           FINAL CTA

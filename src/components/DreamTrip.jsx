@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { FiArrowRight, FiCheck } from "react-icons/fi";
+
 import "./DreamTrip.css";
 
 function DreamTrip() {
+  // GitHub Pages / Vite-safe image path
+  const image = (path) =>
+    `${import.meta.env.BASE_URL}images/${path}`;
+
   const highlights = [
     "Individuell nach Ihren Wünschen geplant",
     "Persönliche Betreuung vor Ort",
@@ -15,22 +20,37 @@ function DreamTrip() {
 
       <div className="dream-trip-container">
 
-        {/* Image */}
+        {/* =========================================
+            IMAGE
+        ========================================= */}
+
         <div className="dream-trip-image">
 
           <img
-            src="/images/sele2.jpeg"
+            src={image("sele2.jpeg")}
             alt="Traumurlaub auf Sansibar"
+            loading="lazy"
           />
 
           <div className="dream-trip-image-caption">
-            <span>Ihre Reise</span>
-            <strong>Ihre Geschichte</strong>
+
+            <span>
+              Ihre Reise
+            </span>
+
+            <strong>
+              Ihre Geschichte
+            </strong>
+
           </div>
 
         </div>
 
-        {/* Content */}
+
+        {/* =========================================
+            CONTENT
+        ========================================= */}
+
         <div className="dream-trip-content">
 
           <span className="dream-trip-eyebrow">
@@ -48,28 +68,45 @@ function DreamTrip() {
             gestalten wir Ihre persönliche Reise auf Sansibar.
           </p>
 
+
+          {/* =========================================
+              HIGHLIGHTS
+          ========================================= */}
+
           <div className="dream-trip-list">
 
             {highlights.map((highlight) => (
+
               <div
                 className="dream-trip-item"
                 key={highlight}
               >
+
                 <span className="dream-trip-check">
                   <FiCheck />
                 </span>
 
-                <span>{highlight}</span>
+                <span>
+                  {highlight}
+                </span>
+
               </div>
+
             ))}
 
           </div>
+
 
           <p className="dream-trip-text">
             Ob erholsamer Strandurlaub, Rundreise, Safari oder
             individuelle Ausflüge – wir planen Ihre Reise mit
             persönlicher Betreuung und lokaler Erfahrung.
           </p>
+
+
+          {/* =========================================
+              CTA
+          ========================================= */}
 
           <Link
             to="/kontakt"

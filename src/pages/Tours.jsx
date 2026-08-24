@@ -19,16 +19,21 @@ function Tours() {
     );
   }, [activeCategory]);
 
+  // GitHub Pages / Vite image base path
+  const image = (path) =>
+    `${import.meta.env.BASE_URL}images/${path}`;
+
   return (
     <main className="tours-page">
 
       {/* =========================================
           HERO
       ========================================= */}
+
       <section className="tours-hero">
 
         <img
-          src="/images/stone-town3.jpg"
+          src={image("stone-town3.jpg")}
           alt="Sansibar Reise und Tour"
           className="tours-hero-image"
         />
@@ -56,17 +61,21 @@ function Tours() {
 
       </section>
 
+
       {/* =========================================
           TOUR CATALOGUE
       ========================================= */}
+
       <section className="tours-catalogue">
 
         <div className="tours-container">
 
           {/* Header */}
+
           <div className="tours-catalogue-header">
 
             <div>
+
               <span className="tours-section-eyebrow">
                 IHRE AUSWAHL
               </span>
@@ -75,6 +84,7 @@ function Tours() {
                 Entdecken Sie
                 <span>Ihre Reise.</span>
               </h2>
+
             </div>
 
             <p>
@@ -84,10 +94,13 @@ function Tours() {
 
           </div>
 
+
           {/* Filters */}
+
           <div className="tour-filters">
 
             {tourCategories.map((category) => (
+
               <button
                 type="button"
                 key={category}
@@ -100,27 +113,37 @@ function Tours() {
               >
                 {category}
               </button>
+
             ))}
 
           </div>
 
+
           {/* Results */}
+
           <div className="tour-results">
 
             <div className="tour-results-count">
+
               {filteredTours.length}{" "}
+
               {filteredTours.length === 1
                 ? "Erlebnis"
                 : "Erlebnisse"}
+
             </div>
+
 
             <div className="tours-grid">
 
               {filteredTours.map((tour) => (
+
                 <article
                   className="tour-list-card"
                   key={tour.id}
                 >
+
+                  {/* Tour image */}
 
                   <div className="tour-list-image">
 
@@ -134,6 +157,7 @@ function Tours() {
                       {tour.category}
                     </span>
 
+
                     <Link
                       to={`/reisen/${tour.slug}`}
                       className="tour-card-arrow"
@@ -144,6 +168,9 @@ function Tours() {
 
                   </div>
 
+
+                  {/* Tour content */}
+
                   <div className="tour-list-content">
 
                     <div className="tour-location">
@@ -151,11 +178,14 @@ function Tours() {
                       {tour.location}
                     </div>
 
-                    <h3>{tour.title}</h3>
+                    <h3>
+                      {tour.title}
+                    </h3>
 
                     <p>
                       {tour.shortDescription}
                     </p>
+
 
                     <div className="tour-list-footer">
 
@@ -175,6 +205,7 @@ function Tours() {
                   </div>
 
                 </article>
+
               ))}
 
             </div>
@@ -185,18 +216,23 @@ function Tours() {
 
       </section>
 
+
       {/* =========================================
           CUSTOM TRIP CTA
       ========================================= */}
+
       <section className="tours-custom">
 
         <div className="tours-custom-image">
+
           <img
-            src="/images/nungwi.jpg"
+            src={image("nungwi.jpg")}
             alt="Individuelle Reise nach Sansibar"
             loading="lazy"
           />
+
         </div>
+
 
         <div className="tours-custom-content">
 

@@ -1,3 +1,13 @@
+// =========================================================
+// KARL INSEL TOUR
+// Tour Data
+// Images are stored in: public/images/
+// Works on localhost and GitHub Pages
+// =========================================================
+
+const image = (path) => `${import.meta.env.BASE_URL}images/${path}`;
+
+
 export const tours = [
   {
     id: 1,
@@ -5,7 +15,8 @@ export const tours = [
     title: "Stone Town Tour",
     category: "Kultur",
     location: "Stone Town",
-    image: "/images/stone-town.png",
+
+    image: image("stone-town.png"),
 
     shortDescription:
       "Entdecken Sie die historische Altstadt Sansibars und ihre faszinierende Kultur.",
@@ -23,14 +34,15 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/stone-town1.jpg",
-      "/images/forodhani-garden.png",
-      "/images/stone-town2.png",
-      "/images/stone-town3.jpg",
+      image("stone-town1.jpg"),
+      image("forodhani-garden.png"),
+      image("stone-town2.png"),
+      image("stone-town3.jpg"),
     ],
 
     featured: true,
   },
+
 
   {
     id: 2,
@@ -38,7 +50,8 @@ export const tours = [
     title: "Gewürzfarm-Tour",
     category: "Kultur",
     location: "Sansibar",
-    image: "/images/spice-picture.jpeg",
+
+    image: image("spice-picture.jpeg"),
 
     shortDescription:
       "Entdecken Sie die Gewürze, Aromen und Traditionen der Gewürzinsel.",
@@ -56,13 +69,14 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/spice-farm.png",
-      "/images/spice-tours.jpeg",
-      "/images/spice-picture.jpeg",
+      image("spice-farm.png"),
+      image("spice-tours.jpeg"),
+      image("spice-picture.jpeg"),
     ],
 
     featured: true,
   },
+
 
   {
     id: 3,
@@ -70,7 +84,8 @@ export const tours = [
     title: "Prison Island",
     category: "Natur",
     location: "Prison Island",
-    image: "/images/prison-island.jpg",
+
+    image: image("prison-island.jpg"),
 
     shortDescription:
       "Besuchen Sie Prison Island und entdecken Sie die berühmten Riesenschildkröten.",
@@ -88,11 +103,12 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/prison-island.jpg",
+      image("prison-island.jpg"),
     ],
 
     featured: true,
   },
+
 
   {
     id: 4,
@@ -100,7 +116,8 @@ export const tours = [
     title: "Mnemba Island",
     category: "Meer & Abenteuer",
     location: "Mnemba",
-    image: "/images/mnemba-island.jpg",
+
+    image: image("mnemba-island.jpg"),
 
     shortDescription:
       "Entdecken Sie die faszinierende Unterwasserwelt rund um Mnemba.",
@@ -118,12 +135,13 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/mnemba-snorkeling.jpg",
-      "/images/mnemba-island.jpg",
+      image("mnemba-snorkeling.jpg"),
+      image("mnemba-island.jpg"),
     ],
 
     featured: true,
   },
+
 
   {
     id: 5,
@@ -131,7 +149,8 @@ export const tours = [
     title: "Blue Safari",
     category: "Meer & Abenteuer",
     location: "Sansibar",
-    image: "/images/blue-safari.jpg",
+
+    image: image("blue-safari.jpg"),
 
     shortDescription:
       "Ein Tag auf dem Indischen Ozean mit Meer, Inseln und besonderen Momenten.",
@@ -149,12 +168,13 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/blue-safari.jpg",
-      "/images/gallery-ocean.jpg",
+      image("blue-safari.jpg"),
+      image("gallery-ocean.jpg"),
     ],
 
     featured: true,
   },
+
 
   {
     id: 6,
@@ -162,7 +182,8 @@ export const tours = [
     title: "Jozani-Wald",
     category: "Natur",
     location: "Jozani",
-    image: "/images/jozani-chwaka.jpg",
+
+    image: image("jozani-chwaka.jpg"),
 
     shortDescription:
       "Entdecken Sie den Jozani-Wald und seine besondere Tier- und Pflanzenwelt.",
@@ -180,13 +201,14 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/sele-jozani.png",
-      "/images/jozani.jpeg",
-      "/images/jozani-znz.jpeg",
+      image("sele-jozani.png"),
+      image("jozani.jpeg"),
+      image("jozani-znz.jpeg"),
     ],
 
     featured: true,
   },
+
 
   {
     id: 7,
@@ -194,7 +216,8 @@ export const tours = [
     title: "Kizimkazi",
     category: "Meer & Abenteuer",
     location: "Kizimkazi",
-    image: "/images/kizimkazi.jpg",
+
+    image: image("kizimkazi.jpg"),
 
     shortDescription:
       "Entdecken Sie die Küste von Kizimkazi und erleben Sie das Meer.",
@@ -212,11 +235,12 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/kizimkazi.jpg",
+      image("kizimkazi.jpg"),
     ],
 
     featured: false,
   },
+
 
   {
     id: 8,
@@ -224,7 +248,8 @@ export const tours = [
     title: "The Rock Restaurant",
     category: "Kulinarik",
     location: "Michamvi",
-    image: "/images/rock-restaurant.jpg",
+
+    image: image("rock-restaurant.jpg"),
 
     shortDescription:
       "Besuchen Sie einen der außergewöhnlichsten Orte zum Essen auf Sansibar.",
@@ -242,11 +267,12 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/rock-restaurant.jpg",
+      image("rock-restaurant.jpg"),
     ],
 
     featured: false,
   },
+
 
   {
     id: 9,
@@ -254,7 +280,8 @@ export const tours = [
     title: "Safari in Tansania",
     category: "Safari",
     location: "Tansania",
-    image: "/images/tanzania-safari.png",
+
+    image: image("tanzania-safari.png"),
 
     shortDescription:
       "Erleben Sie die faszinierende Tierwelt Tansanias.",
@@ -272,12 +299,13 @@ export const tours = [
     ],
 
     gallery: [
-      "/images/tanzania-safari.jpg",
+      image("tanzania-safari.png"),
     ],
 
     featured: false,
   },
 ];
+
 
 export const tourCategories = [
   "Alle",

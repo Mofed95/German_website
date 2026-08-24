@@ -10,48 +10,56 @@ import {
 import "./Sansibar.css";
 
 function Sansibar() {
+  // GitHub Pages / Vite-safe image path
+  const image = (path) =>
+    `${import.meta.env.BASE_URL}images/${path}`;
+
   const highlights = [
     {
       icon: <FiMapPin />,
       title: "Stone Town",
-      text: "Historische Gassen, beeindruckende Architektur und die kulturelle Vielfalt Sansibars.",
+      text:
+        "Historische Gassen, beeindruckende Architektur und die kulturelle Vielfalt Sansibars.",
     },
     {
       icon: <FiSun />,
       title: "Traumstrände",
-      text: "Weiße Sandstrände, Palmen und türkisblaues Wasser entlang der Küste.",
+      text:
+        "Weiße Sandstrände, Palmen und türkisblaues Wasser entlang der Küste.",
     },
     {
       icon: <FiCompass />,
       title: "Meer & Inseln",
-      text: "Entdecken Sie die faszinierende Welt rund um Mnemba, Prison Island und den Indischen Ozean.",
+      text:
+        "Entdecken Sie die faszinierende Welt rund um Mnemba, Prison Island und den Indischen Ozean.",
     },
     {
       icon: <FiHeart />,
       title: "Kultur & Tradition",
-      text: "Erleben Sie die Gewürzkultur, lokale Traditionen und das besondere Lebensgefühl der Insel.",
+      text:
+        "Erleben Sie die Gewürzkultur, lokale Traditionen und das besondere Lebensgefühl der Insel.",
     },
   ];
 
   const places = [
     {
       title: "Stone Town",
-      image: "/images/stone-town.png",
+      image: image("stone-town.png"),
       description: "Geschichte & Kultur",
     },
     {
       title: "Nungwi",
-      image: "/images/nungwi.jpg",
+      image: image("nungwi.jpg"),
       description: "Strand & Meer",
     },
     {
       title: "Paje",
-      image: "/images/paje.png",
+      image: image("paje.png"),
       description: "Küste & Atmosphäre",
     },
     {
       title: "Kizimkazi",
-      image: "/images/kizimkazi.jpg",
+      image: image("kizimkazi.jpg"),
       description: "Meer & Delfine",
     },
   ];
@@ -62,10 +70,11 @@ function Sansibar() {
       {/* =========================================
           HERO
       ========================================= */}
+
       <section className="sansibar-hero">
 
         <img
-          src="/images/ozean.png"
+          src={image("ozean.png")}
           alt="Sansibar Strand und Indischer Ozean"
           className="sansibar-hero-image"
         />
@@ -100,9 +109,11 @@ function Sansibar() {
 
       </section>
 
+
       {/* =========================================
           INTRO
       ========================================= */}
+
       <section
         className="sansibar-intro"
         id="entdecken"
@@ -143,9 +154,11 @@ function Sansibar() {
 
       </section>
 
+
       {/* =========================================
           HIGHLIGHTS
       ========================================= */}
+
       <section className="sansibar-highlights">
 
         <div className="sansibar-container">
@@ -166,6 +179,7 @@ function Sansibar() {
           <div className="sansibar-highlights-grid">
 
             {highlights.map((item) => (
+
               <article
                 className="sansibar-highlight-card"
                 key={item.title}
@@ -180,6 +194,7 @@ function Sansibar() {
                 <p>{item.text}</p>
 
               </article>
+
             ))}
 
           </div>
@@ -188,9 +203,11 @@ function Sansibar() {
 
       </section>
 
+
       {/* =========================================
           PLACES
       ========================================= */}
+
       <section className="sansibar-places">
 
         <div className="sansibar-container">
@@ -198,6 +215,7 @@ function Sansibar() {
           <div className="sansibar-section-header places-header">
 
             <div>
+
               <span className="sansibar-section-eyebrow">
                 DIE SCHÖNSTEN ORTE
               </span>
@@ -206,6 +224,7 @@ function Sansibar() {
                 Entdecken Sie
                 <span>Sansibar.</span>
               </h2>
+
             </div>
 
             <p>
@@ -218,6 +237,7 @@ function Sansibar() {
           <div className="sansibar-places-grid">
 
             {places.map((place) => (
+
               <article
                 className="sansibar-place-card"
                 key={place.title}
@@ -232,8 +252,15 @@ function Sansibar() {
                 <div className="sansibar-place-overlay">
 
                   <div>
-                    <span>{place.description}</span>
-                    <h3>{place.title}</h3>
+
+                    <span>
+                      {place.description}
+                    </span>
+
+                    <h3>
+                      {place.title}
+                    </h3>
+
                   </div>
 
                   <div className="sansibar-place-arrow">
@@ -243,6 +270,7 @@ function Sansibar() {
                 </div>
 
               </article>
+
             ))}
 
           </div>
@@ -251,15 +279,17 @@ function Sansibar() {
 
       </section>
 
+
       {/* =========================================
           EXPERIENCE
       ========================================= */}
+
       <section className="sansibar-experience">
 
         <div className="sansibar-experience-image">
 
           <img
-            src="/images/ozean.png"
+            src={image("ozean.png")}
             alt="Dhow auf dem Indischen Ozean"
             loading="lazy"
           />
@@ -288,7 +318,7 @@ function Sansibar() {
             to="/reisen"
             className="sansibar-experience-button"
           >
-            Reisen & Touren entdecken
+            Reisen &amp; Touren entdecken
             <FiArrowRight />
           </Link>
 
@@ -296,9 +326,11 @@ function Sansibar() {
 
       </section>
 
+
       {/* =========================================
           CTA
       ========================================= */}
+
       <section className="sansibar-cta">
 
         <div className="sansibar-cta-content">

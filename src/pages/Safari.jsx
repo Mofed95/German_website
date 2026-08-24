@@ -11,6 +11,22 @@ import {
 import "./Safari.css";
 
 function Safari() {
+  // =========================================================
+  // IMAGE ROOT
+  // Images are stored directly inside:
+  // public/images/
+  //
+  // Works on localhost AND GitHub Pages
+  // =========================================================
+
+  const image = (filename) =>
+    `${import.meta.env.BASE_URL}images/${filename}`;
+
+
+  // =========================================================
+  // SAFARI SERVICES
+  // =========================================================
+
   const safariServices = [
     {
       icon: <FiCompass />,
@@ -38,6 +54,11 @@ function Safari() {
     },
   ];
 
+
+  // =========================================================
+  // SAFARI FEATURES
+  // =========================================================
+
   const safariFeatures = [
     "Private und individuell geplante Reise",
     "Deutschsprachige Reiseleitung",
@@ -48,96 +69,105 @@ function Safari() {
     "Lokale Ortskenntnis",
   ];
 
-  /*
-   * Major Tanzania safari destinations.
-   *
-   * These are presented as safari DESTINATIONS,
-   * not as confirmed KARL INSEL TOUR packages.
-   */
+
+  // =========================================================
+  // SAFARI DESTINATIONS
+  // =========================================================
+
   const safariDestinations = [
     {
       name: "Serengeti National Park",
       subtitle: "Die große Wildnis",
       description:
         "Eine der bekanntesten Safari-Regionen Afrikas mit beeindruckenden Landschaften und einer außergewöhnlichen Tierwelt.",
-      image: "/images/safari/serengeti.jpg",
+      image: image("serengeti.jpg"),
     },
+
     {
       name: "Ngorongoro",
       subtitle: "Krater & Tierwelt",
       description:
         "Eine außergewöhnliche Landschaft mit einer beeindruckenden Konzentration verschiedener Wildtiere.",
-      image: "/images/safari/ngorongoro.jpg",
+      image: image("ngorongoro.png"),
     },
+
     {
       name: "Tarangire National Park",
       subtitle: "Elefanten & Baobabs",
       description:
         "Bekannt für seine großen Elefantenherden, charakteristischen Baobab-Bäume und abwechslungsreiche Landschaft.",
-      image: "/images/safari/tarangire.jpg",
+      image: image("tarangire.jpg"),
     },
+
     {
       name: "Lake Manyara National Park",
       subtitle: "See & Natur",
       description:
         "Eine abwechslungsreiche Region mit See, Waldgebieten, Landschaften und einer vielfältigen Tierwelt.",
-      image: "/images/safari/lake-manyara.jpg",
+      image: image("lake-manyara.jpg"),
     },
+
     {
       name: "Arusha National Park",
       subtitle: "Natur am Kilimanjaro",
       description:
         "Ein vielseitiges Naturgebiet mit Bergen, Wäldern und unterschiedlichen Landschaften.",
-      image: "/images/safari/arusha.jpg",
+      image: image("arusha.jpg"),
     },
+
     {
       name: "Nyerere National Park",
       subtitle: "Flüsse & Wildnis",
       description:
         "Eine weitläufige Wildnis im Süden Tansanias mit beeindruckenden Landschaften und Flussgebieten.",
-      image: "/images/safari/nyerere.jpg",
+      image: image("nyerere.jpg"),
     },
+
     {
       name: "Ruaha National Park",
       subtitle: "Unberührte Wildnis",
       description:
         "Ein weitläufiges und weniger dicht besuchtes Safari-Gebiet mit beeindruckender Landschaft.",
-      image: "/images/safari/ruaha.jpg",
+      image: image("ruaha.jpg"),
     },
+
     {
       name: "Mikumi National Park",
       subtitle: "Safari im Süden",
       description:
         "Ein gut erreichbares Safari-Gebiet mit offenen Landschaften und vielfältiger Tierwelt.",
-      image: "/images/safari/mikumi.jpg",
+      image: image("mikumi.jpg"),
     },
+
     {
       name: "Katavi National Park",
       subtitle: "Abenteuer abseits der Wege",
       description:
         "Eine abgelegene Wildnis für Reisende, die ein besonders ursprüngliches Safari-Erlebnis suchen.",
-      image: "/images/safari/katavi.jpg",
+      image: image("katavi.jpg"),
     },
+
     {
       name: "Mahale Mountains",
       subtitle: "Berge & Tanganyika-See",
       description:
         "Eine außergewöhnliche Kombination aus Berglandschaft, tropischer Natur und dem Tanganyika-See.",
-      image: "/images/safari/mahale.jpg",
+      image: image("mahale.jpg"),
     },
   ];
+
 
   return (
     <main className="safari-page">
 
-      {/* =========================================
+      {/* =====================================================
           HERO
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-hero">
 
         <img
-          src="/images/safari-hero.jpg"
+          src={image("Mahale-Mountains-National-Park.jpg")}
           alt="Safari in Tansania"
           className="safari-hero-image"
         />
@@ -174,9 +204,10 @@ function Safari() {
 
       </section>
 
-      {/* =========================================
+
+      {/* =====================================================
           INTRO
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-intro">
 
@@ -225,9 +256,10 @@ function Safari() {
 
       </section>
 
-      {/* =========================================
+
+      {/* =====================================================
           SAFARI SERVICES
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-experiences">
 
@@ -280,9 +312,10 @@ function Safari() {
 
       </section>
 
-      {/* =========================================
+
+      {/* =====================================================
           SAFARI DESTINATIONS
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-destinations">
 
@@ -361,16 +394,17 @@ function Safari() {
 
       </section>
 
-      {/* =========================================
+
+      {/* =====================================================
           FEATURED SAFARI
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-featured">
 
         <div className="safari-featured-image">
 
           <img
-            src="/images/safari/festland-safari.jpg"
+            src={image("festland-safari.jpg")}
             alt="Festland-Safari in Tansania"
             loading="lazy"
           />
@@ -412,9 +446,10 @@ function Safari() {
 
       </section>
 
-      {/* =========================================
+
+      {/* =====================================================
           WHY CHOOSE US
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-features">
 
@@ -442,11 +477,15 @@ function Safari() {
                   className="safari-feature-item"
                   key={feature}
                 >
+
                   <span>
                     <FiCheck />
                   </span>
 
-                  <p>{feature}</p>
+                  <p>
+                    {feature}
+                  </p>
+
                 </div>
               ))}
 
@@ -483,16 +522,17 @@ function Safari() {
 
       </section>
 
-      {/* =========================================
+
+      {/* =====================================================
           ZANZIBAR + SAFARI
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-combination">
 
         <div className="safari-combination-image">
 
           <img
-            src="/images/zanzibar-safari-combination.jpg"
+            src={image("from-zanzibar.png")}
             alt="Sansibar und Safari"
             loading="lazy"
           />
@@ -502,7 +542,7 @@ function Safari() {
         <div className="safari-combination-content">
 
           <span className="safari-section-eyebrow">
-            INSEL & FESTLAND
+            INSEL &amp; FESTLAND
           </span>
 
           <h2>
@@ -529,9 +569,10 @@ function Safari() {
 
       </section>
 
-      {/* =========================================
+
+      {/* =====================================================
           FINAL CTA
-      ========================================= */}
+      ===================================================== */}
 
       <section className="safari-cta">
 

@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { FiArrowUpRight, FiCheck } from "react-icons/fi";
+
 import "./KarlAbout.css";
 
 function KarlAbout() {
+  // GitHub Pages / Vite-safe image path
+  const image = (path) =>
+    `${import.meta.env.BASE_URL}images/${path}`;
+
   const qualities = [
     "Deutschsprachige Reiseleitung",
     "Lizenzierter Reiseleiter",
@@ -15,24 +20,41 @@ function KarlAbout() {
 
       <div className="karl-about-container">
 
-        {/* Left - Image */}
+        {/* =========================================
+            LEFT — IMAGE
+        ========================================= */}
+
         <div className="karl-about-visual">
 
           <div className="karl-about-image">
+
             <img
-              src="/images/sele3.jpeg"
+              src={image("sele3.jpeg")}
               alt="Karl - Ihr Reiseleiter auf Sansibar"
+              loading="lazy"
             />
+
           </div>
 
           <div className="karl-about-badge">
-            <span>Ihr Gastgeber</span>
-            <strong>Karl</strong>
+
+            <span>
+              Ihr Gastgeber
+            </span>
+
+            <strong>
+              Karl
+            </strong>
+
           </div>
 
         </div>
 
-        {/* Right - Content */}
+
+        {/* =========================================
+            RIGHT — CONTENT
+        ========================================= */}
+
         <div className="karl-about-content">
 
           <span className="karl-about-eyebrow">
@@ -61,23 +83,38 @@ function KarlAbout() {
             verständliche Erklärungen und eine entspannte Reise.
           </p>
 
-          {/* Qualities */}
+
+          {/* =========================================
+              QUALITIES
+          ========================================= */}
+
           <div className="karl-qualities">
 
             {qualities.map((quality) => (
+
               <div
                 className="karl-quality"
                 key={quality}
               >
+
                 <span>
                   <FiCheck />
                 </span>
 
-                <p>{quality}</p>
+                <p>
+                  {quality}
+                </p>
+
               </div>
+
             ))}
 
           </div>
+
+
+          {/* =========================================
+              FOOTER
+          ========================================= */}
 
           <div className="karl-about-footer">
 
@@ -90,8 +127,15 @@ function KarlAbout() {
             </Link>
 
             <div className="karl-signature">
-              <span>Beste Grüße aus Sansibar</span>
-              <strong>Karl</strong>
+
+              <span>
+                Beste Grüße aus Sansibar
+              </span>
+
+              <strong>
+                Karl
+              </strong>
+
             </div>
 
           </div>

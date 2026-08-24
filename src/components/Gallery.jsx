@@ -2,33 +2,37 @@ import { FiArrowUpRight } from "react-icons/fi";
 import "./Gallery.css";
 
 function Gallery() {
+  // GitHub Pages / Vite-safe image path
+  const image = (path) =>
+    `${import.meta.env.BASE_URL}images/${path}`;
+
   const images = [
     {
-      image: "/images/stone-town1.jpg",
+      image: image("stone-town1.jpg"),
       title: "Stone Town",
       category: "Kultur",
       className: "gallery-large",
     },
     {
-      image: "/images/prison-island.jpg",
+      image: image("prison-island.jpg"),
       title: "Prison Island",
       category: "Insel",
       className: "gallery-tall",
     },
     {
-      image: "/images/spice-picture.jpeg",
+      image: image("spice-picture.jpeg"),
       title: "Gewürzfarm",
       category: "Tradition",
       className: "gallery-small",
     },
     {
-      image: "/images/beach-ocean.jpg",
+      image: image("beach-ocean.jpg"),
       title: "Indischer Ozean",
       category: "Meer",
       className: "gallery-small",
     },
     {
-      image: "/images/jozani-znz.jpeg",
+      image: image("jozani-znz.jpeg"),
       title: "Jozani-Wald",
       category: "Natur",
       className: "gallery-wide",
@@ -40,10 +44,14 @@ function Gallery() {
 
       <div className="gallery-container">
 
-        {/* Header */}
+        {/* =========================================
+            HEADER
+        ========================================= */}
+
         <div className="gallery-header">
 
           <div>
+
             <span className="gallery-eyebrow">
               SANSIBAR ENTDECKEN
             </span>
@@ -52,6 +60,7 @@ function Gallery() {
               Sansibar in
               <span>Bildern.</span>
             </h2>
+
           </div>
 
           <p>
@@ -61,10 +70,15 @@ function Gallery() {
 
         </div>
 
-        {/* Gallery */}
+
+        {/* =========================================
+            GALLERY
+        ========================================= */}
+
         <div className="gallery-grid">
 
           {images.map((item) => (
+
             <div
               className={`gallery-item ${item.className}`}
               key={item.title}
@@ -79,8 +93,15 @@ function Gallery() {
               <div className="gallery-overlay">
 
                 <div>
-                  <span>{item.category}</span>
-                  <h3>{item.title}</h3>
+
+                  <span>
+                    {item.category}
+                  </span>
+
+                  <h3>
+                    {item.title}
+                  </h3>
+
                 </div>
 
                 <div className="gallery-arrow">
@@ -90,6 +111,7 @@ function Gallery() {
               </div>
 
             </div>
+
           ))}
 
         </div>
